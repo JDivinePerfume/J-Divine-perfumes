@@ -17,7 +17,6 @@
             color: #333;
         }
 
-        /* Navigation */
         nav {
             background: linear-gradient(90deg, #6a1b9a 0%, #d4af37 100%);
             padding: 1rem 2rem;
@@ -47,7 +46,6 @@
             color: #ffd700;
         }
 
-        /* Header */
         header {
             text-align: center;
             padding: 4rem 2rem;
@@ -66,7 +64,6 @@
             font-style: italic;
         }
 
-        /* Sections */
         section {
             max-width: 1200px;
             margin: 3rem auto;
@@ -85,7 +82,6 @@
             padding-bottom: 1rem;
         }
 
-        /* About Section */
         #about p {
             font-size: 1.1rem;
             line-height: 1.8;
@@ -93,7 +89,6 @@
             color: #555;
         }
 
-        /* Products Grid */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -165,10 +160,9 @@
             transform: scale(1.05);
         }
 
-        /* Contact Section */
         .contact-info {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmin(250px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
@@ -198,7 +192,6 @@
             font-weight: bold;
         }
 
-        /* Footer */
         footer {
             background: linear-gradient(90deg, #6a1b9a 0%, #d4af37 100%);
             color: white;
@@ -211,16 +204,13 @@
             font-size: 1.1rem;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2.5rem;
             }
-
             nav ul {
                 gap: 1rem;
             }
-
             h2 {
                 font-size: 2rem;
             }
@@ -228,7 +218,6 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -238,153 +227,136 @@
         </ul>
     </nav>
 
-    <!-- Header -->
     <header id="home">
-        <h1>✨ J Perfumes ✨</h1>
+        <h1>J Perfumes</h1>
         <p>Where Luxury Meets Fragrance</p>
     </header>
 
-    <!-- About Section -->
     <section id="about">
         <h2>About J Perfumes</h2>
         <p>
-            Welcome to J Perfumes, where we believe that every fragrance tells a story. Founded with a passion for luxury and elegance, we curate the finest perfumes that embody sophistication and charm. Our collection is carefully crafted to suit every personality, occasion, and mood. At J Perfumes, we don't just sell perfumes – we create experiences that linger in memories. Each bottle is a testament to quality, artistry, and the divine essence of beauty. Discover your signature scent with us and embrace the luxury you deserve.
+            Welcome to J Perfumes, where we believe that every fragrance tells a story. Founded with a passion for luxury and elegance, we curate the finest perfumes that embody sophistication and charm. Our collection is carefully crafted to suit every personality, occasion, and mood. At J Perfumes, we don't just sell perfumes - we create experiences that linger in memories. Each bottle is a testament to quality, artistry, and the divine essence of beauty. Discover your signature scent with us and embrace the luxury you deserve.
         </p>
     </section>
 
-    <!-- Products Section -->
     <section id="products">
         <h2>Our Exclusive Collection</h2>
         <div class="products-grid">
-            <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-image">Product Image 1</div>
                 <h3>Divine Elegance</h3>
                 <p class="description">A luxurious blend of floral and woody notes. Perfect for evening wear and special occasions.</p>
-                <p class="price">₹1,299</p>
-                <button class="order-btn" onclick="orderProduct('Divine Elegance', '₹1,299')">Order Now</button>
+                <p class="price">Rs 1,299</p>
+                <button class="order-btn" onclick="orderProduct('Divine Elegance', 'Rs 1,299')">Order Now</button>
             </div>
 
-            <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-image">Product Image 2</div>
                 <h3>Mystic Rose</h3>
                 <p class="description">Fresh rose petals with a hint of vanilla. Ideal for romantic evenings and date nights.</p>
-                <p class="price">₹999</p>
-                <button class="order-btn" onclick="orderProduct('Mystic Rose', '₹999')">Order Now</button>
+                <p class="price">Rs 999</p>
+                <button class="order-btn" onclick="orderProduct('Mystic Rose', 'Rs 999')">Order Now</button>
             </div>
 
-            <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-image">Product Image 3</div>
                 <h3>Ocean Breeze</h3>
                 <p class="description">Refreshing aquatic fragrance with citrus notes. Perfect for daily wear and casual outings.</p>
-                <p class="price">₹799</p>
-                <button class="order-btn" onclick="orderProduct('Ocean Breeze', '₹799')">Order Now</button>
+                <p class="price">Rs 799</p>
+                <button class="order-btn" onclick="orderProduct('Ocean Breeze', 'Rs 799')">Order Now</button>
             </div>
 
-            <!-- Product 4 -->
             <div class="product-card">
                 <div class="product-image">Product Image 4</div>
                 <h3>Golden Amber</h3>
                 <p class="description">Warm amber and musk blend. A signature scent for confident personalities.</p>
-                <p class="price">₹1,499</p>
-                <button class="order-btn" onclick="orderProduct('Golden Amber', '₹1,499')">Order Now</button>
+                <p class="price">Rs 1,499</p>
+                <button class="order-btn" onclick="orderProduct('Golden Amber', 'Rs 1,499')">Order Now</button>
             </div>
 
-            <!-- Product 5 -->
             <div class="product-card">
                 <div class="product-image">Product Image 5</div>
                 <h3>Lavender Dreams</h3>
                 <p class="description">Calming lavender with soft vanilla. Perfect for relaxation and peaceful moments.</p>
-                <p class="price">₹899</p>
-                <button class="order-btn" onclick="orderProduct('Lavender Dreams', '₹899')">Order Now</button>
+                <p class="price">Rs 899</p>
+                <button class="order-btn" onclick="orderProduct('Lavender Dreams', 'Rs 899')">Order Now</button>
             </div>
 
-            <!-- Product 6 -->
             <div class="product-card">
                 <div class="product-image">Product Image 6</div>
                 <h3>Citrus Burst</h3>
                 <p class="description">Energetic blend of orange and lemon. Great for morning freshness and active days.</p>
-                <p class="price">₹749</p>
-                <button class="order-btn" onclick="orderProduct('Citrus Burst', '₹749')">Order Now</button>
+                <p class="price">Rs 749</p>
+                <button class="order-btn" onclick="orderProduct('Citrus Burst', 'Rs 749')">Order Now</button>
             </div>
 
-            <!-- Product 7 -->
             <div class="product-card">
                 <div class="product-image">Product Image 7</div>
                 <h3>Velvet Oud</h3>
                 <p class="description">Rich oud with spicy undertones. A luxurious choice for special celebrations.</p>
-                <p class="price">₹1,799</p>
-                <button class="order-btn" onclick="orderProduct('Velvet Oud', '₹1,799')">Order Now</button>
+                <p class="price">Rs 1,799</p>
+                <button class="order-btn" onclick="orderProduct('Velvet Oud', 'Rs 1,799')">Order Now</button>
             </div>
 
-            <!-- Product 8 -->
             <div class="product-card">
                 <div class="product-image">Product Image 8</div>
                 <h3>Jasmine Night</h3>
                 <p class="description">Exotic jasmine with sandalwood base. Perfect for evening elegance and sophistication.</p>
-                <p class="price">₹1,199</p>
-                <button class="order-btn" onclick="orderProduct('Jasmine Night', '₹1,199')">Order Now</button>
+                <p class="price">Rs 1,199</p>
+                <button class="order-btn" onclick="orderProduct('Jasmine Night', 'Rs 1,199')">Order Now</button>
             </div>
 
-            <!-- Product 9 -->
             <div class="product-card">
                 <div class="product-image">Product Image 9</div>
                 <h3>Fresh Mint</h3>
                 <p class="description">Cool mint with green tea essence. Refreshing scent for everyday confidence.</p>
-                <p class="price">₹649</p>
-                <button class="order-btn" onclick="orderProduct('Fresh Mint', '₹649')">Order Now</button>
+                <p class="price">Rs 649</p>
+                <button class="order-btn" onclick="orderProduct('Fresh Mint', 'Rs 649')">Order Now</button>
             </div>
 
-            <!-- Product 10 -->
             <div class="product-card">
                 <div class="product-image">Product Image 10</div>
                 <h3>Royal Saffron</h3>
                 <p class="description">Premium saffron with rose. A royal fragrance for those who love opulence.</p>
-                <p class="price">₹1,999</p>
-                <button class="order-btn" onclick="orderProduct('Royal Saffron', '₹1,999')">Order Now</button>
+                <p class="price">Rs 1,999</p>
+                <button class="order-btn" onclick="orderProduct('Royal Saffron', 'Rs 1,999')">Order Now</button>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
         <div class="contact-info">
             <div class="contact-card">
-                <h3>📱 WhatsApp</h3>
+                <h3>WhatsApp</h3>
                 <p><a href="https://wa.me/919270980271" target="_blank">+91 9270980271</a></p>
                 <p>Order directly via WhatsApp</p>
             </div>
             <div class="contact-card">
-                <h3>📧 Email</h3>
+                <h3>Email</h3>
                 <p><a href="mailto:gurujujaya6@gmail.com">gurujujaya6@gmail.com</a></p>
                 <p>For inquiries and support</p>
             </div>
             <div class="contact-card">
-                <h3>📍 Location</h3>
+                <h3>Location</h3>
                 <p>Pune, Maharashtra</p>
                 <p>India</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 J Perfumes. All Rights Reserved.</p>
-        <p>Crafted with love in Pune ❤️</p>
+        <p>Copyright 2025 J Perfumes. All Rights Reserved.</p>
+        <p>Crafted with love in Pune</p>
     </footer>
 
     <script>
-        // Function to handle order button clicks
         function orderProduct(productName, price) {
-            const message = `Hi! I want to order *${productName}* (${price}) from J Perfumes website.`;
-            const whatsappURL = `https://wa.me/919270980271?text=${encodeURIComponent(message)}`;
+            const message = 'Hi! I want to order ' + productName + ' (' + price + ') from J Perfumes website.';
+            const whatsappURL = 'https://wa.me/919270980271?text=' + encodeURIComponent(message);
             window.open(whatsappURL, '_blank');
         }
 
-        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
